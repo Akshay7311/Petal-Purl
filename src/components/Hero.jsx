@@ -20,9 +20,8 @@ const Hero = () => {
         </div>
         <div className="hero-image-wrapper">
           <div className="hero-image floating-element pulse-glow">
-            {/* The user provided a beautiful anime doll image, so we use a similarly aesthetic placeholder image or anime aesthetic art styling */}
             <img 
-              src="https://images.unsplash.com/photo-1515041219749-89347f83291a?q=80&w=600&auto=format&fit=crop" 
+              src="https://i.etsystatic.com/40608581/r/il/8cc427/5675276366/il_fullxfull.5675276366_p5no.jpg" 
               alt="Luxury Anime Amigurumi" 
               className="main-amigurumi"
             />

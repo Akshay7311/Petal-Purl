@@ -7,27 +7,27 @@ const products = [
     id: 1,
     title: 'Frieren - The Mage',
     price: 85.00,
-    image: 'https://images.unsplash.com/photo-1590682680695-43b964a3ae17?q=80&w=600&auto=format&fit=crop', // proxy image
+    image: 'https://i.etsystatic.com/40608581/r/il/8cc427/5675276366/il_fullxfull.5675276366_p5no.jpg',
     isPopular: true
   },
   {
     id: 2,
     title: 'Maomao - Apothecary',
     price: 90.00,
-    image: 'https://images.unsplash.com/photo-1582560416972-e1d1ebc3c6f0?q=80&w=600&auto=format&fit=crop',
+    image: 'https://i.etsystatic.com/49685199/r/il/ab5b14/6859698947/il_1080xN.6859698947_4l00.jpg',
   },
   {
     id: 3,
     title: 'Anya - Telepath',
     price: 75.00,
-    image: 'https://images.unsplash.com/photo-1594819047050-99defca82545?q=80&w=600&auto=format&fit=crop',
+    image: 'https://i.etsystatic.com/35753261/r/il/48f879/5787218177/il_fullxfull.5787218177_sntr.jpg',
     isNew: true
   },
   {
     id: 4,
     title: 'Nezuko - Demon Sister',
     price: 95.00,
-    image: 'https://images.unsplash.com/photo-1591543620767-582b2e76369e?q=80&w=600&auto=format&fit=crop',
+    image: 'https://i.etsystatic.com/34608788/r/il/f04464/7854358892/il_fullxfull.7854358892_ln2z.jpg',
   }
 ];
 

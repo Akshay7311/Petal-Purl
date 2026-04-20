@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="hero-image-wrapper">
           <div className="hero-image floating-element pulse-glow">
             <img 
-              src="https://i.etsystatic.com/46294721/r/il/a76a59/5643446654/il_570xN.5643446654_b06s.jpg" 
+              src="/images/frieren.png" 
               alt="Luxury Anime Amigurumi" 
               className="main-amigurumi"
             />

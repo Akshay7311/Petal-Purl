@@ -7,7 +7,7 @@ const products = [
     id: 1,
     title: 'Frieren - The Mage',
     price: 85.00,
-    image: 'https://i.etsystatic.com/40608581/r/il/8cc427/5675276366/il_fullxfull.5675276366_p5no.jpg',
+    image: 'https://i.etsystatic.com/46294721/r/il/a76a59/5643446654/il_570xN.5643446654_b06s.jpg',
     isPopular: true
   },
   {

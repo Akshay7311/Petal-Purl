@@ -19,9 +19,10 @@ const Navbar = () => {
           <h2>Petal <span className="title-gradient">&</span> Purl</h2>
         </div>
         <ul className="nav-links">
-          <li><a href="#home">Boutique</a></li>
-          <li><a href="#featured">Featured Dolls</a></li>
-          <li><a href="#collections">Collections</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Boutique</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <button className="primary-btn nav-btn">Cart (0)</button>
       </div>

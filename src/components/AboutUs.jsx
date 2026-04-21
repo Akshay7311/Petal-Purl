@@ -19,7 +19,7 @@ const AboutUs = () => {
         </div>
         <div className="about-image-wrapper">
           <div className="about-image-frame glass-panel">
-            <img src="/images/nilou.png" alt="Crafting Amigurumi Detail" className="about-craft-img" />
+            <img src="./images/nilou.png" alt="Crafting Amigurumi Detail" className="about-craft-img" />
             <div className="glass-panel decorative-element el-3">100% Hand Woven</div>
           </div>
         </div>

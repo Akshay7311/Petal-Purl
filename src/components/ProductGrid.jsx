@@ -7,7 +7,7 @@ const products = [
     id: 1,
     title: 'Frieren - The Mage',
     price: 6800,
-    image: '/images/frieren.png',
+    image: './images/frieren.png',
     isPopular: true
   },
   {
@@ -20,20 +20,20 @@ const products = [
     id: 3,
     title: 'Maomao - Apothecary (Variant 2)',
     price: 7600,
-    image: '/images/maomao.png',
+    image: './images/maomao.png',
     isNew: true
   },
   {
     id: 4,
     title: 'Howl - The Wizard',
     price: 8800,
-    image: '/images/howl.png',
+    image: './images/howl.png',
   },
   {
     id: 5,
     title: 'Nilou - The Dancer',
     price: 8400,
-    image: '/images/nilou.png',
+    image: './images/nilou.png',
     isPopular: true
   },
   {

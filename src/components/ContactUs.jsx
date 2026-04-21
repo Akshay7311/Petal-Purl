@@ -1,56 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ContactUs.css';
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thank you for reaching out! We will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-  };
-
   return (
     <section className="contact-section" id="contact">
-      <div className="contact-container">
-        <div className="section-header">
+      <div className="contact-container glass-panel">
+        <div className="contact-info">
           <h2 className="brand-font">Get in <span className="title-gradient">Touch</span></h2>
-          <p>Have questions about custom orders? Send us a message!</p>
+          <p className="contact-desc">Have a custom character request or inquiry about our current stock? Reach out to our boutique directly.</p>
+          <div className="contact-details">
+            <div className="detail-item">
+              <span className="detail-label">Atelier</span>
+              <span className="detail-value">concierge@petalandpurl.com</span>
+            </div>
+            <div className="detail-item">
+              <span className="detail-label">Instagram</span>
+              <span className="detail-value">@PetalAndPurl</span>
+            </div>
+          </div>
         </div>
-        
-        <form className="contact-form glass-panel" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input 
-              type="text" 
-              id="name" 
-              value={formData.name}
-              onChange={(e) => setFormData({...formData, name: e.target.value})}
-              required 
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input 
-              type="email" 
-              id="email" 
-              value={formData.email}
-              onChange={(e) => setFormData({...formData, email: e.target.value})}
-              required 
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea 
-              id="message" 
-              rows="5" 
-              value={formData.message}
-              onChange={(e) => setFormData({...formData, message: e.target.value})}
-              required 
-            ></textarea>
-          </div>
-          <button type="submit" className="primary-btn submit-btn">Send Message</button>
-        </form>
+        <div className="contact-form-container">
+          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+            <div className="form-group">
+              <input type="text" placeholder="Your Elegant Name" className="contact-input" required />
+            </div>
+            <div className="form-group">
+              <input type="email" placeholder="Your Email Address" className="contact-input" required />
+            </div>
+            <div className="form-group">
+              <textarea rows="4" placeholder="Tell us about the custom doll of your dreams..." className="contact-input" required></textarea>
+            </div>
+            <button type="submit" className="primary-btn submit-btn">Submit Inquiry</button>
+          </form>
+        </div>
       </div>
     </section>
   );

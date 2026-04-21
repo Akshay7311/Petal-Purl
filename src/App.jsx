@@ -5,10 +5,13 @@ import ProductGrid from './components/ProductGrid'
 import AboutUs from './components/AboutUs'
 import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
+import BottomNav from './components/BottomNav'
+import AnnouncementBar from './components/AnnouncementBar'
 
 function App() {
   return (
     <div className="app-container">
+      <AnnouncementBar />
       <Navbar />
       <main>
         <Hero />
@@ -17,6 +20,7 @@ function App() {
         <ContactUs />
       </main>
       <Footer />
+      <BottomNav />
     </div>
   )
 }

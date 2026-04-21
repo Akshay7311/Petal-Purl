@@ -1,0 +1,21 @@
+.announcement-bar {
+  background-color: var(--text-main);
+  color: white;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  z-index: 1000;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .announcement-bar p {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -128,3 +128,9 @@ a {
 .pulse-glow {
   animation: pulse-shadow 4s infinite;
 }
+
+@media (max-width: 768px) {
+  main, .app-container {
+    padding-bottom: 70px; /* Space for BottomNav */
+  }
+}

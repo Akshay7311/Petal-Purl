@@ -1,18 +1,21 @@
 .navbar {
   position: fixed;
-  top: 0;
+  top: 36px; /* Below the announcement bar initially */
   left: 0;
   width: 100%;
   padding: 20px 40px;
   z-index: 100;
   transition: var(--transition);
-  border: 1px solid transparent; /* matches glass border later */
+  border: 1px solid transparent;
   border-radius: 0;
 }
 
 .navbar.scrolled {
+  top: 0; /* Snap to top when scrolling down */
   padding: 15px 40px;
   border-bottom: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
 }
 
 .navbar-container {
@@ -21,6 +24,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.mobile-search-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-main);
+  margin-left: 10px;
 }
 
 .logo h2 {
@@ -43,11 +63,109 @@
 
 .nav-links a:hover {
   color: var(--primary-color);
-  text-shadow: 0 0 10px rgba(255,59,48,0.5);
+  text-shadow: 0 0 10px rgba(209, 133, 150, 0.5);
+}
+
+/* Mobile Drawer Styles */
+.drawer-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.drawer-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0; left: -300px; width: 280px; height: 100%;
+  background: #fffafb;
+  z-index: 1002;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-drawer.open {
+  left: 0;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(209, 133, 150, 0.2);
+}
+
+.close-drawer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.drawer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.drawer-links a {
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--text-main);
+  text-decoration: none;
+  display: block;
+  transition: color 0.2s;
+}
+
+.drawer-links a:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
-  .nav-links {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .navbar.scrolled {
+    padding: 12px 20px;
+  }
+  .nav-links, .desktop-cart {
     display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+  .mobile-search-btn {
+    display: block;
+  }
+  /* On mobile, center the logo and distribute space like a native app header */
+  .navbar-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .hamburger-btn {
+    justify-self: start;
+  }
+  .logo {
+    justify-self: center;
+  }
+  .nav-actions {
+    justify-self: end;
+  }
+  .logo h2 {
+    font-size: 1.5rem;
   }
 }

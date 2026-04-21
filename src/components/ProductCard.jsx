@@ -11,7 +11,7 @@ const ProductCard = ({ title, price, image, isNew, isPopular }) => {
       </div>
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
-        <p className="card-price">${price.toFixed(2)}</p>
+        <p className="card-price">₹{price.toLocaleString('en-IN')}</p>
         <button className="primary-btn card-btn">Add to Cart</button>
       </div>
     </div>

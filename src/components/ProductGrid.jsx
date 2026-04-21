@@ -6,47 +6,47 @@ const products = [
   {
     id: 1,
     title: 'Frieren - The Mage',
-    price: 85.00,
+    price: 6800,
     image: '/images/frieren.png',
     isPopular: true
   },
   {
     id: 2,
     title: 'Maomao - Apothecary (Variant 1)',
-    price: 90.00,
+    price: 7200,
     image: 'https://i.etsystatic.com/49685199/r/il/ab5b14/6859698947/il_1080xN.6859698947_4l00.jpg',
   },
   {
     id: 3,
     title: 'Maomao - Apothecary (Variant 2)',
-    price: 95.00,
+    price: 7600,
     image: '/images/maomao.png',
     isNew: true
   },
   {
     id: 4,
     title: 'Howl - The Wizard',
-    price: 110.00,
+    price: 8800,
     image: '/images/howl.png',
   },
   {
     id: 5,
     title: 'Nilou - The Dancer',
-    price: 105.00,
+    price: 8400,
     image: '/images/nilou.png',
     isPopular: true
   },
   {
     id: 6,
     title: 'Anya - Telepath',
-    price: 75.00,
+    price: 6000,
     image: 'https://i.etsystatic.com/35753261/r/il/48f879/5787218177/il_fullxfull.5787218177_sntr.jpg',
     isPopular: true
   },
   {
     id: 7,
     title: 'Nezuko - Demon Sister',
-    price: 95.00,
+    price: 7600,
     image: 'https://i.etsystatic.com/34608788/r/il/f04464/7854358892/il_fullxfull.7854358892_ln2z.jpg',
     isNew: true
   }

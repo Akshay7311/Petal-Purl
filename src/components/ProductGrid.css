@@ -75,8 +75,37 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 992px) {
+  .product-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .product-grid-section {
+    padding: 40px 15px;
+  }
   .section-header h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+  }
+  /* Ultra-compact 2-column mobile view for luxury shopping app feel */
+  .product-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px; /* Very tight spacing to show 6-7 items efficiently */
+  }
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  .search-input {
+    padding: 12px 20px;
+    font-size: 0.95rem;
   }
 }
